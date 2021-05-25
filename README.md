@@ -9,7 +9,7 @@
 
 **Mock-Up**
 
-![](./example.mov)
+![](./example.gif)
 
 **Challenges | Comments**
 

@@ -38,7 +38,7 @@ $(document).ready(function(){
       strings: [
         "Developer",
         "Scientist",
-        "Invester",
+        "Investor",
         "Designer",
         "Entrepreneur",
       ],
@@ -51,7 +51,7 @@ $(document).ready(function(){
       strings: [
         "Developer",
         "Scientist",
-        "Invester",
+        "Investor",
         "Designer",
         "Entrepreneur",
       ],

@@ -569,9 +569,121 @@ footer span a:hover{
 }
 
 
+.container{
+  width: 1000px;
+  position: relative;
+  display: flex;
+  flex-wrap:wrap;
+  margin: auto;
+  justify-content: space-between;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container .card{
+  position: relative;
+}
+
+.container .card .face{
+  width:300px;
+  height: 200px;
+  transition:.4s;
+}
+
+.container .card .face.face1{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+  transform: translateY(0);
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px purple,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px purple,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px purple,
+    10px 0 80px #0ff;  
+}
+
+.container .card .face.face1 .content{
+  opacity: .2;
+  transition:  0.5s;
+  text-align: center;
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+ 
+}
+
+.container .card .face.face1 .content i{
+  font-size: 1.5em;
+  color: white;
+  display: inline-block;
+  margin-bottom: 10px;
+   
+}
+
+.container .card .face.face1 .content h3{
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+
+.container .card .face.face1 .content a{
+   transition: .5s;
+}
+
+.container .card .face.face2{
+   position: relative;
+   background: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p, a{
+  font-size: 12pt;
+  margin: 0 ;
+  padding: 0;
+  color:#333;
+}
+
+.container .card .face.face2 .content a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.container .card .face.face2 .content a:hover{
+  background: black ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
 /* responsive media query start */
 @media (max-width: 1104px) {
-    .about .about-content .left img{
+    .container .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
@@ -612,35 +724,35 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2{
+    .container .home .home-content .text-2{
         font-size: 70px;
     }
-    .home .home-content .text-3{
+    .container .home .home-content .text-3{
         font-size: 35px;
     }
-    .home .home-content a{
+    .container .home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
     }
     .max-width{
         max-width: 930px;
     }
-    .about .about-content .column{
+    .container .about .about-content .column{
         width: 100%;
     }
-    .about .about-content .left{
+    .container .about .about-content .left{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+    .container .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .container .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    .container .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -651,35 +763,35 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
-    .home .home-content .text-2{
+    .container .home .home-content .text-2{
         font-size: 60px;
     }
-    .home .home-content .text-3{
+    .container .home .home-content .text-3{
         font-size: 32px;
     }
-    .home .home-content a{
+    .container .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .container .services .serv-content .card{
         width: 100%;
     }
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2{
+    .container .home .home-content .text-2{
         font-size: 50px;
     }
-    .home .home-content .text-3{
+    .container .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
+    .container .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
     }
-    .contact .right form .fields{
+    .container .contact .right form .fields{
         flex-direction: column;
     }
-    .contact .right form .name,
+    .container .contact .right form .name,
     .contact .right form .email{
         margin: 0;
     }

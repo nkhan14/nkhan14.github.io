@@ -24,6 +24,6 @@ program. They will get anxious learning I will be leaving soon, and that could c
 
 **Links**
 
-*Live URL* : https://nkhan14.github.io/Personal_Portfolio/
+*Live URL* : https://nkhan14.github.io/
 
 *GitHub URL* : https://github.com/nkhan14/Personal_Portfolio

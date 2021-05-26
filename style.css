@@ -579,17 +579,17 @@ footer span a:hover{
   font-family: 'Ubuntu', sans-serif;
 }
 
-.container .card{
+.card{
   position: relative;
 }
 
-.container .card .face{
+.card .face{
   width:300px;
   height: 200px;
   transition:.4s;
 }
 
-.container .card .face.face1{
+.card .face.face1{
   position: relative;
   background: #333;
   display: flex;
@@ -600,7 +600,7 @@ footer span a:hover{
   transform: translateY(100px);
 }
 
-.container .card:hover .face.face1{
+.card:hover .face.face1{
   transform: translateY(0);
   box-shadow:
     inset 0 0 60px whitesmoke,
@@ -613,18 +613,18 @@ footer span a:hover{
     10px 0 80px #0ff;  
 }
 
-.container .card .face.face1 .content{
+.card .face.face1 .content{
   opacity: .2;
   transition:  0.5s;
   text-align: center;
 }
 
-.container .card:hover .face.face1 .content{
+.card:hover .face.face1 .content{
   opacity: 1;
  
 }
 
-.container .card .face.face1 .content i{
+.card .face.face1 .content i{
   font-size: 1.5em;
   color: white;
   display: inline-block;
@@ -632,17 +632,17 @@ footer span a:hover{
    
 }
 
-.container .card .face.face1 .content h3{
+.card .face.face1 .content h3{
   font-size: 1.5em;
   color: white;
   text-align: center;
 }
 
-.container .card .face.face1 .content a{
+.card .face.face1 .content a{
    transition: .5s;
 }
 
-.container .card .face.face2{
+.card .face.face2{
    position: relative;
    background: whitesmoke;
    display: flex;
@@ -654,18 +654,18 @@ footer span a:hover{
   transform: translateY(-100px);
 }
 
-.container .card:hover .face.face2{
+.card:hover .face.face2{
     transform: translateY(0);
 }
 
-.container .card .face.face2 .content p, a{
+.card .face.face2 .content p, a{
   font-size: 12pt;
   margin: 0 ;
   padding: 0;
   color:#333;
 }
 
-.container .card .face.face2 .content a{
+.card .face.face2 .content a{
   text-decoration:none;
   color: black;
   box-sizing: border-box;
@@ -675,7 +675,7 @@ footer span a:hover{
   display: inline-block;
 }
 
-.container .card .face.face2 .content a:hover{
+.card .face.face2 .content a:hover{
   background: black ;
   color: whitesmoke; 
   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
@@ -683,7 +683,7 @@ footer span a:hover{
 
 /* responsive media query start */
 @media (max-width: 1104px) {
-    .container .about .about-content .left img{
+    .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
@@ -724,35 +724,35 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-    .container .home .home-content .text-2{
+    .home .home-content .text-2{
         font-size: 70px;
     }
-    .container .home .home-content .text-3{
+    .home .home-content .text-3{
         font-size: 35px;
     }
-    .container .home .home-content a{
+    .home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
     }
     .max-width{
         max-width: 930px;
     }
-    .container .about .about-content .column{
+    .about .about-content .column{
         width: 100%;
     }
-    .container .about .about-content .left{
+    .about .about-content .left{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .container .about .about-content .right{
+    .about .about-content .right{
         flex: 100%;
     }
-    .container .services .serv-content .card{
+    .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .container .skills .skills-content .column,
+    .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
@@ -763,35 +763,35 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
-    .container .home .home-content .text-2{
+    .home .home-content .text-2{
         font-size: 60px;
     }
-    .container .home .home-content .text-3{
+    .home .home-content .text-3{
         font-size: 32px;
     }
-    .container .home .home-content a{
+    .home .home-content a{
         font-size: 20px;
     }
-    .container .services .serv-content .card{
+    .services .serv-content .card{
         width: 100%;
     }
 }
 
 @media (max-width: 500px) {
-    .container .home .home-content .text-2{
+    .home .home-content .text-2{
         font-size: 50px;
     }
-    .container .home .home-content .text-3{
+    .home .home-content .text-3{
         font-size: 27px;
     }
-    .container .about .about-content .right .text,
+    .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
     }
-    .container .contact .right form .fields{
+    .contact .right form .fields{
         flex-direction: column;
     }
-    .container .contact .right form .name,
+    .contact .right form .name,
     .contact .right form .email{
         margin: 0;
     }
